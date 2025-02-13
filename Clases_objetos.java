@@ -81,11 +81,10 @@ public class Clases_objetos {
                                        ArrayList<String> CampersPeligro, ArrayList<String> CampersMatriculados) {
         System.out.println("Bienvenido " + nombre + " Coordinador del centro de entrenamiento");
         System.out.println("1. Campers inscritos");
-        System.out.println("2. Ver grupos que finalizaron el modulo");
-        System.out.println("3. Ver campers en peligro");
-        System.out.println("4. Regresar");
-        System.out.println("5. Matricular camper nuevo");
-        System.out.println("6. Eliminar camper");
+        System.out.println("2. Ver campers en peligro");
+        System.out.println("3. Regresar");
+        System.out.println("4. Matricular camper nuevo");
+        System.out.println("5. Eliminar camper");
 
         int opcion = sc.nextInt();
         sc.nextLine();
@@ -97,16 +96,13 @@ public class Clases_objetos {
                 System.out.println(CampersMatriculados);
                 break;
             case 2:
-                System.out.println("No hay grupos registrados que hayan finalizado el modulo");
-                break;
-            case 3:
                 System.out.println("Los campers en peligro son: ");
                 imprimirLista(CampersPeligro);
                 break;
-            case 4:
+            case 3:
                 System.out.println("Regresando al menu principal");
                 break;
-            case 5:
+            case 4:
                 System.out.println("Ingrese el nombre del camper a matricular: ");
                 String nuevoCamper = sc.nextLine();
                 
@@ -116,7 +112,7 @@ public class Clases_objetos {
                 } else {
                     System.out.println("El camper ya esta matriculado");
                 } break;
-            case 6:
+            case 5:
                 System.out.println("Lista de campers: ");
                 imprimirLista(Campers);
                 System.out.println("Ingrese el numero del camper que desea eliminar: ");
